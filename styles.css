@@ -1,0 +1,108 @@
+
+* {box-sizing: border-box;}
+
+div
+{
+  display: block;
+}
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.fixed-footer{
+  width: 100%;
+  position: relative;        
+  background: #333;
+  padding: 10px 0;
+  color: #fff;
+  bottom: 0;
+}
+.bgimg-1
+ {
+  background-image: url(corona.jpeg);
+  font-size:200px;
+  min-height: 100%;
+ }
+
+ .bgimg-2
+ {
+  background-image: url(bgimg-2.jpg);
+  font-size:200px;
+  min-height: 100%;
+ }
+
+ .bgimg-3
+ {
+  background-image: url(bgimg-3.jpg);
+  font-size:200px;
+  min-height: 100%;
+ }
+
+ .bgimg-4
+ {
+  background-image: url(bgimg-4.jfif);
+  font-size:200px;
+  min-height: 100%;
+ }
+.bgimg-1,.bgimg-2,.bgimg-3,.bgimg-4{
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+    .caption {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 100%;
+      text-align: center;
+      color: #000;
+    }
+.header {
+  overflow: hidden;
+  background-color: #510000;
+  padding: 5px 5px;
+}
+.header a {
+  float: left;
+  color: rgb(252, 250, 250);
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 900px) {
+ 
+  .header,.bgimg-1,.bgimg-2,.bgimg-3,.bgimg-4{
+    float: none;
+    display: block;
+    font-size: 70px;
+    text-align: left;
+  }
+
+  
+  .header-right {
+    float: none;
+  }
+}
